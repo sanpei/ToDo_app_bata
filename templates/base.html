@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <title>Title</title>
+    {% block head %}{% endblock %}
+</head>
+<body>
+<nav class="navbar navbar-light bg-light p-3">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Todo</a>
+  </div>
+</nav>
+    {% block body %}{% endblock %}
+</body>
+</html>
